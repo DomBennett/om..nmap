@@ -1,4 +1,4 @@
-# Run `nmap` with `outsider` in R
+# Run [`nmap`](https://nmap.org/) with `outsider` in R
 [![Build Status](https://travis-ci.org/hrbrmstr/om..nmap.svg?branch=master)](https://travis-ci.org/hrbrmstr/om..nmap)
 
 

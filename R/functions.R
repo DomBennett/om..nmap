@@ -17,13 +17,12 @@ nmap <- function(...) {
   on.exit(unlink(td, recursive = TRUE), add = TRUE) # remove it when done
 
   # convert the ... into a argument list
-  arglist <- outsider::.arglist_get(...)
+  arglist <- arglist_get(...)
   # create an outsider object: describe the arguments and program
-  otsdr <- outsider::.outsider_init(repo = "hrbrmstr/om..nmap",
-                                    cmd = "nmap", wd = td,
-                                    arglist = arglist)
+  otsdr <- outsider_init(pkgnm = "om..nmap", cmd = "nmap", wd = td,
+                         arglist = arglist)
   # run the command
-  out <- outsider::.run(otsdr)
+  out <- run(otsdr)
 
   if (out) {
     fil_names <- list.files(td, full.names = TRUE)
@@ -36,5 +35,4 @@ nmap <- function(...) {
     )
     return(invisible(out))
   }
-
 }

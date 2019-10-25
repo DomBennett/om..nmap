@@ -19,7 +19,8 @@ Run `nmap` with any command-line arguments you want. If you use any
 }
 \examples{
 library(outsider)
-nmap <- module_import('nmap', repo = 'hrbrmstr/om..nmap')
+# nmap <- module_import('nmap', repo = 'hrbrmstr/om..nmap')
+library(om..nmap)
 nmap('-h')  # or --help or whichever argument prints help
-nmap("-v", "-oX", "/working_dir/outputfile.xml", "-sS", "localhost")
+res <- nmap("-v", "-oX", "/working_dir/outputfile.xml", "-sS", "localhost")
 }

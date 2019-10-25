@@ -1,0 +1,5 @@
+program: nmap
+details: Utility for network discovery and security auditing.
+docker: hrbrmstr
+github: hrbrmstr
+url: https://github.com/hrbrmstr/om..nmap

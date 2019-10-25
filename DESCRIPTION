@@ -1,4 +1,4 @@
-Package: om..nmap..hrbrmstr
+Package: om..nmap
 Type: Package
 Version: 1.0.0
 Title: Outsider module for running nmap
